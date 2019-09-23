@@ -12,77 +12,84 @@ use srag\RemovePluginDataConfirm\SrUserEnrolment\PluginUninstallTrait;
  *
  * @author studer + raimann ag - Team Custom 1 <support-custom1@studer-raimann.ch>
  */
-class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin {
+class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
+{
 
-	use PluginUninstallTrait;
-	use SrUserEnrolmentTrait;
-	const PLUGIN_ID = "srusrenrcron";
-	const PLUGIN_NAME = "SrUserEnrolmentCron";
-	const PLUGIN_CLASS_NAME = ilSrUserEnrolmentPlugin::class;
-	const REMOVE_PLUGIN_DATA_CONFIRM = false;
-	const REMOVE_PLUGIN_DATA_CONFIRM_CLASS_NAME = SrUserEnrolmentRemoveDataConfirm::class;
-	/**
-	 * @var self|null
-	 */
-	protected static $instance = null;
-
-
-	/**
-	 * @return self
-	 */
-	public static function getInstance(): self {
-		if (self::$instance === null) {
-			self::$instance = new self();
-		}
-
-		return self::$instance;
-	}
+    use PluginUninstallTrait;
+    use SrUserEnrolmentTrait;
+    const PLUGIN_ID = "srusrenrcron";
+    const PLUGIN_NAME = "SrUserEnrolmentCron";
+    const PLUGIN_CLASS_NAME = ilSrUserEnrolmentPlugin::class;
+    const REMOVE_PLUGIN_DATA_CONFIRM = false;
+    const REMOVE_PLUGIN_DATA_CONFIRM_CLASS_NAME = SrUserEnrolmentRemoveDataConfirm::class;
+    /**
+     * @var self|null
+     */
+    protected static $instance = null;
 
 
-	/**
-	 * ilSrUserEnrolmentCronPlugin constructor
-	 */
-	public function __construct() {
-		parent::__construct();
-	}
+    /**
+     * @return self
+     */
+    public static function getInstance() : self
+    {
+        if (self::$instance === null) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
+    }
 
 
-	/**
-	 * @return string
-	 */
-	public function getPluginName(): string {
-		return self::PLUGIN_NAME;
-	}
+    /**
+     * ilSrUserEnrolmentCronPlugin constructor
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
 
 
-	/**
-	 * @return ilCronJob[]
-	 */
-	public function getCronJobInstances(): array {
-		return [ new Job() ];
-	}
+    /**
+     * @return string
+     */
+    public function getPluginName() : string
+    {
+        return self::PLUGIN_NAME;
+    }
 
 
-	/**
-	 * @param string $a_job_id
-	 *
-	 * @return ilCronJob|null
-	 */
-	public function getCronJobInstance(/*string*/ $a_job_id)/*: ?ilCronJob*/ {
-		switch ($a_job_id) {
-			case Job::CRON_JOB_ID:
-				return new Job();
-
-			default:
-				return null;
-		}
-	}
+    /**
+     * @return ilCronJob[]
+     */
+    public function getCronJobInstances() : array
+    {
+        return [new Job()];
+    }
 
 
-	/**
-	 * @inheritdoc
-	 */
-	protected function deleteData()/*: void*/ {
-		// Nothing to delete
-	}
+    /**
+     * @param string $a_job_id
+     *
+     * @return ilCronJob|null
+     */
+    public function getCronJobInstance(/*string*/ $a_job_id)/*: ?ilCronJob*/
+    {
+        switch ($a_job_id) {
+            case Job::CRON_JOB_ID:
+                return new Job();
+
+            default:
+                return null;
+        }
+    }
+
+
+    /**
+     * @inheritdoc
+     */
+    protected function deleteData()/*: void*/
+    {
+        // Nothing to delete
+    }
 }
