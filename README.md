@@ -1,3 +1,5 @@
+This is an OpenSource project by studer + raimann ag, CH-Burgdorf (https://studer-raimann.ch)
+
 ## Installation
 
 First install and enable [SrUserEnrolment](https://github.com/studer-raimann/SrUserEnrolment).
