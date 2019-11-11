@@ -5,7 +5,6 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 use srag\Plugins\SrUserEnrolment\Job\Job;
 use srag\Plugins\SrUserEnrolment\Utils\SrUserEnrolmentTrait;
-use srag\RemovePluginDataConfirm\SrUserEnrolment\PluginUninstallTrait;
 
 /**
  * Class ilSrUserEnrolmentCronPlugin
@@ -15,13 +14,10 @@ use srag\RemovePluginDataConfirm\SrUserEnrolment\PluginUninstallTrait;
 class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
 {
 
-    use PluginUninstallTrait;
     use SrUserEnrolmentTrait;
     const PLUGIN_ID = "srusrenrcron";
     const PLUGIN_NAME = "SrUserEnrolmentCron";
     const PLUGIN_CLASS_NAME = ilSrUserEnrolmentPlugin::class;
-    const REMOVE_PLUGIN_DATA_CONFIRM = false;
-    const REMOVE_PLUGIN_DATA_CONFIRM_CLASS_NAME = SrUserEnrolmentRemoveDataConfirm::class;
     /**
      * @var self|null
      */
@@ -82,14 +78,5 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
             default:
                 return null;
         }
-    }
-
-
-    /**
-     * @inheritdoc
-     */
-    protected function deleteData()/*: void*/
-    {
-        // Nothing to delete
     }
 }
