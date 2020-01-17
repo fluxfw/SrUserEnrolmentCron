@@ -47,7 +47,7 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
 
 
     /**
-     * @return string
+     * @inheritDoc
      */
     public function getPluginName() : string
     {
@@ -56,7 +56,7 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
 
 
     /**
-     * @return ilCronJob[]
+     * @inheritDoc
      */
     public function getCronJobInstances() : array
     {
@@ -65,9 +65,7 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
 
 
     /**
-     * @param string $a_job_id
-     *
-     * @return ilCronJob|null
+     * @inheritDoc
      */
     public function getCronJobInstance(/*string*/ $a_job_id)/*: ?ilCronJob*/
     {
