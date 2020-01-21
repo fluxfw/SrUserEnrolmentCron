@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.0.3]
+- Adjustments for SrUserEnrolment v3.2.0
+
 ## [1.0.2]
 - Fix
 

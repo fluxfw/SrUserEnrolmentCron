@@ -3,7 +3,6 @@
 require_once __DIR__ . "/../../../../UIComponent/UserInterfaceHook/SrUserEnrolment/vendor/autoload.php";
 require_once __DIR__ . "/../vendor/autoload.php";
 
-use srag\Plugins\SrUserEnrolment\RuleEnrolment\Rule\Job;
 use srag\Plugins\SrUserEnrolment\Utils\SrUserEnrolmentTrait;
 
 /**
@@ -60,7 +59,7 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
      */
     public function getCronJobInstances() : array
     {
-        return [new Job()];
+        return self::srUserEnrolment()->jobs()->factory()->newInstances();
     }
 
 
@@ -69,12 +68,6 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
      */
     public function getCronJobInstance(/*string*/ $a_job_id)/*: ?ilCronJob*/
     {
-        switch ($a_job_id) {
-            case Job::CRON_JOB_ID:
-                return new Job();
-
-            default:
-                return null;
-        }
+        return self::srUserEnrolment()->jobs()->factory()->newInstanceById($a_job_id);
     }
 }
