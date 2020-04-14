@@ -1,5 +1,9 @@
 # Changelog
 
+## [x]
+- ILIAS 6 support
+- Remove ILIAS 5.3 support
+
 ## [1.0.3]
 - Adjustments for SrUserEnrolment v3.2.0
 
