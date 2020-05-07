@@ -1,6 +1,5 @@
 <?php
 
-require_once __DIR__ . "/../../../../UIComponent/UserInterfaceHook/SrUserEnrolment/vendor/autoload.php";
 require_once __DIR__ . "/../vendor/autoload.php";
 
 use srag\Plugins\SrUserEnrolment\Utils\SrUserEnrolmentTrait;
@@ -14,6 +13,7 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
 {
 
     use SrUserEnrolmentTrait;
+
     const PLUGIN_ID = "srusrenrcron";
     const PLUGIN_NAME = "SrUserEnrolmentCron";
     const PLUGIN_CLASS_NAME = ilSrUserEnrolmentPlugin::class;
