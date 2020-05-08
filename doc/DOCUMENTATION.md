@@ -1,1 +1,1 @@
-## SrUserEnrolmentCron Documentation
+# SrUserEnrolmentCron ILIAS Plugin Documentation
