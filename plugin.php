@@ -3,7 +3,7 @@
 require_once __DIR__ . "/../../../UIComponent/UserInterfaceHook/SrUserEnrolment/vendor/srag/dic/src/PHPVersionChecker.php";
 
 $id = "srusrenrcron";
-$version = "1.0.3";
+$version = "1.1.0";
 $ilias_min_version = "5.4.0";
 $ilias_max_version = "6.999";
 $responsible = "studer + raimann ag - Team Custom 1";
