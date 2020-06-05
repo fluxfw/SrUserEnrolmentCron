@@ -28,6 +28,9 @@
     },
     "classmap": [
       "classes/"
+    ],
+    "files": [
+      "../../../UIComponent/UserInterfaceHook/SrUserEnrolment/vendor/autoload.php"
     ]
   },
   "config": {
