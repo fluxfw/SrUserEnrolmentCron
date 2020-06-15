@@ -14,13 +14,22 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
 
     use SrUserEnrolmentTrait;
 
+    const PLUGIN_CLASS_NAME = ilSrUserEnrolmentPlugin::class;
     const PLUGIN_ID = "srusrenrcron";
     const PLUGIN_NAME = "SrUserEnrolmentCron";
-    const PLUGIN_CLASS_NAME = ilSrUserEnrolmentPlugin::class;
     /**
      * @var self|null
      */
     protected static $instance = null;
+
+
+    /**
+     * ilSrUserEnrolmentCronPlugin constructor
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
 
 
     /**
@@ -37,20 +46,11 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
 
 
     /**
-     * ilSrUserEnrolmentCronPlugin constructor
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
-
-    /**
      * @inheritDoc
      */
-    public function getPluginName() : string
+    public function getCronJobInstance(/*string*/ $a_job_id)/*: ?ilCronJob*/
     {
-        return self::PLUGIN_NAME;
+        return self::srUserEnrolment()->jobs()->factory()->newInstanceById($a_job_id);
     }
 
 
@@ -66,8 +66,8 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
     /**
      * @inheritDoc
      */
-    public function getCronJobInstance(/*string*/ $a_job_id)/*: ?ilCronJob*/
+    public function getPluginName() : string
     {
-        return self::srUserEnrolment()->jobs()->factory()->newInstanceById($a_job_id);
+        return self::PLUGIN_NAME;
     }
 }
