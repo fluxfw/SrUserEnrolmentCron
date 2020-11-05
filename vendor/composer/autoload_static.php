@@ -15,6 +15,7 @@ class ComposerStaticInit44a45322a214a2f83ec68cbe7753e9f8
         array (
             'srag\\Plugins\\SrUserEnrolmentCron\\' => 33,
             'srag\\LibrariesNamespaceChanger\\' => 31,
+            'srag\\GeneratePluginInfosHelper\\SrUserEnrolmentCron\\' => 51,
         ),
     );
 
@@ -27,10 +28,17 @@ class ComposerStaticInit44a45322a214a2f83ec68cbe7753e9f8
         array (
             0 => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src',
         ),
+        'srag\\GeneratePluginInfosHelper\\SrUserEnrolmentCron\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src',
+        ),
     );
 
     public static $classMap = array (
         'ilSrUserEnrolmentCronPlugin' => __DIR__ . '/../..' . '/classes/class.ilSrUserEnrolmentCronPlugin.php',
+        'srag\\GeneratePluginInfosHelper\\SrUserEnrolmentCron\\GeneratePluginPhpAndXml' => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src/GeneratePluginPhpAndXml.php',
+        'srag\\GeneratePluginInfosHelper\\SrUserEnrolmentCron\\GeneratePluginReadme' => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src/GeneratePluginReadme.php',
+        'srag\\GeneratePluginInfosHelper\\SrUserEnrolmentCron\\UpdatePluginReadme' => __DIR__ . '/..' . '/srag/generateplugininfoshelper/src/UpdatePluginReadme.php',
         'srag\\LibrariesNamespaceChanger\\GeneratePluginPhpAndXml' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/GeneratePluginPhpAndXml.php',
         'srag\\LibrariesNamespaceChanger\\GeneratePluginReadme' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/GeneratePluginReadme.php',
         'srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger' => __DIR__ . '/..' . '/srag/librariesnamespacechanger/src/LibrariesNamespaceChanger.php',
