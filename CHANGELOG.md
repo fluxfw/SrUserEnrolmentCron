@@ -1,5 +1,8 @@
 # Changelog
 
+## [x]
+- Update readme
+
 ## [1.1.1]
 - Fixes
 

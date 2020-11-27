@@ -27,7 +27,13 @@ Update, activate and config the plugin in the ILIAS Plugin Administration
 
 ## Description
 
-First install and enable [SrUserEnrolment](https://github.com/studer-raimann/SrUserEnrolment).
+### Base plugin
+
+First you need to install the [SrUserEnrolment](https://github.com/studer-raimann/SrUserEnrolment) plugin first
+
+### Cron jobs
+
+TODO
 
 ## Adjustment suggestions
 
