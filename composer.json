@@ -1,7 +1,7 @@
 {
   "name": "srag/sruserenrolmentcron",
-  "description": "",
-  "version": "1.1.1",
+  "description": "Cron jobs for enrol by rule and enrolment workflow",
+  "version": "1.1.2",
   "extra": {
     "ilias_plugin": {
       "id": "srusrenrcron",

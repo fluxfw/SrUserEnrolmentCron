@@ -2,7 +2,7 @@
 
 # SrUserEnrolmentCron ILIAS Plugin
 
-
+Cron jobs for enrol by rule and enrolment workflow
 
 This is an OpenSource project by studer + raimann ag, CH-Burgdorf (https://studer-raimann.ch)
 
@@ -29,7 +29,7 @@ Update, activate and config the plugin in the ILIAS Plugin Administration
 
 ### Base plugin
 
-First you need to install the [SrUserEnrolment](https://github.com/studer-raimann/SrUserEnrolment) plugin first
+First you need to install the [SrUserEnrolment](https://github.com/studer-raimann/SrUserEnrolment) plugin
 
 ### Cron jobs
 

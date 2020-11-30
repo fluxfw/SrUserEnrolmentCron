@@ -1,6 +1,6 @@
 # Changelog
 
-## [x]
+## [1.1.2]
 - Update readme
 
 ## [1.1.1]
