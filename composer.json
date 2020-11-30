@@ -1,13 +1,16 @@
 {
-  "name": "srag/plugins/sruserenrolmentcron",
-  "description": "",
-  "version": "1.1.1",
-  "ilias_plugin": {
-    "id": "srusrenrcron",
-    "name": "SrUserEnrolmentCron",
-    "ilias_min_version": "5.4.0",
-    "ilias_max_version": "6.999",
-    "slot": "Services/Cron/CronHook"
+  "name": "srag/sruserenrolmentcron",
+  "description": "Cron jobs for enrol by rule and enrolment workflow",
+  "version": "1.1.2",
+  "extra": {
+    "ilias_plugin": {
+      "id": "srusrenrcron",
+      "name": "SrUserEnrolmentCron",
+      "ilias_min_version": "5.4.0",
+      "ilias_max_version": "6.999",
+      "slot": "Services/Cron/CronHook"
+    },
+    "generate_plugin_readme_template": "SRAG_ILIAS_PLUGIN"
   },
   "type": "project",
   "keywords": [
@@ -29,6 +32,7 @@
   },
   "require": {
     "php": ">=7.0",
+    "srag/generateplugininfoshelper": ">=0.1.0",
     "srag/librariesnamespacechanger": ">=0.1.0"
   },
   "autoload": {
@@ -51,8 +55,8 @@
     "pre-autoload-dump": [
       "srag\\LibrariesNamespaceChanger\\LibrariesNamespaceChanger::rewriteLibrariesNamespaces",
       "srag\\LibrariesNamespaceChanger\\PHP72Backport::PHP72Backport",
-      "srag\\LibrariesNamespaceChanger\\GeneratePluginPhpAndXml::generatePluginPhpAndXml",
-      "srag\\LibrariesNamespaceChanger\\UpdatePluginReadme::updatePluginReadme"
+      "srag\\GeneratePluginInfosHelper\\SrUserEnrolmentCron\\GeneratePluginPhpAndXml::generatePluginPhpAndXml",
+      "srag\\GeneratePluginInfosHelper\\SrUserEnrolmentCron\\GeneratePluginReadme::generatePluginReadme"
     ]
   }
 }

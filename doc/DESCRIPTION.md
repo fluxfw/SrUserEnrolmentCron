@@ -1,1 +1,0 @@
-# SrUserEnrolmentCron ILIAS Plugin Description
