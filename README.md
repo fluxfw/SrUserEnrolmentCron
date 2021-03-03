@@ -20,7 +20,7 @@ Start at your ILIAS root directory
 ```bash
 mkdir -p Customizing/global/plugins/Services/Cron/CronHook
 cd Customizing/global/plugins/Services/Cron/CronHook
-git clone https://github.com/studer-raimann/SrUserEnrolmentCron.git SrUserEnrolmentCron
+git clone https://github.com/fluxfw/SrUserEnrolmentCron.git SrUserEnrolmentCron
 ```
 
 Update, activate and config the plugin in the ILIAS Plugin Administration
@@ -37,8 +37,9 @@ TODO
 
 ## Adjustment suggestions
 
-* External users can report suggestions and bugs at https://plugins.studer-raimann.ch/goto.php?target=uihk_srsu_PLUSE
-* Adjustment suggestions by pull requests via github
+You can report bugs or suggestions at https://plugins.studer-raimann.ch/goto.php?target=uihk_srsu_PLUSE
+
+There is no guarantee this can be fixed or implemented
 
 ## ILIAS Plugin SLA
 

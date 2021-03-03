@@ -1,23 +1,27 @@
 {
   "name": "srag/sruserenrolmentcron",
   "description": "Cron jobs for enrol by rule and enrolment workflow",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "extra": {
     "ilias_plugin": {
       "id": "srusrenrcron",
       "name": "SrUserEnrolmentCron",
       "ilias_min_version": "5.4.0",
       "ilias_max_version": "6.999",
-      "slot": "Services/Cron/CronHook"
+      "slot": "Services/Cron/CronHook",
+      "supports_cli_setup": true
     },
-    "generate_plugin_readme_template": "SRAG_ILIAS_PLUGIN"
+    "generate_plugin_readme_template": "SRAG_ILIAS_PLUGIN",
+    "long_description_template": "src/LONG_DESCRIPTION.md"
   },
   "type": "project",
   "keywords": [
-    "ILIAS",
-    "Plugin"
+    "cron",
+    "ilias",
+    "job",
+    "plugin"
   ],
-  "homepage": "https://github.com/studer-raimann/SrUserEnrolmentCron",
+  "homepage": "https://github.com/fluxfw/SrUserEnrolmentCron",
   "license": "GPL-3.0-only",
   "authors": [
     {
