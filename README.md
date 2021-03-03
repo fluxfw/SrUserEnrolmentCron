@@ -20,7 +20,7 @@ Start at your ILIAS root directory
 ```bash
 mkdir -p Customizing/global/plugins/Services/Cron/CronHook
 cd Customizing/global/plugins/Services/Cron/CronHook
-git clone https://github.com/studer-raimann/SrUserEnrolmentCron.git SrUserEnrolmentCron
+git clone https://github.com/fluxfw/SrUserEnrolmentCron.git SrUserEnrolmentCron
 ```
 
 Update, activate and config the plugin in the ILIAS Plugin Administration
