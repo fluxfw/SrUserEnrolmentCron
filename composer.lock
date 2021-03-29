@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d5bdb7c985990fa26999a4cb89d810c",
+    "content-hash": "fdd868989eb20428667b9d85d9f28b21",
     "packages": [
         {
             "name": "srag/generateplugininfoshelper",
@@ -30,7 +30,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "srag\\GeneratePluginInfosHelper\\": "src/"
+                    "srag\\GeneratePluginInfosHelper\\SrUserEnrolmentCron\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
