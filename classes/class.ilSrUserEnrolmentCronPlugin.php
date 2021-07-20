@@ -46,7 +46,7 @@ class ilSrUserEnrolmentCronPlugin extends ilCronHookPlugin
     /**
      * @inheritDoc
      */
-    public function getCronJobInstance(/*string*/ $a_job_id)/*: ?ilCronJob*/
+    public function getCronJobInstance(/*string*/ $a_job_id) : ?ilCronJob
     {
         return self::srUserEnrolment()->jobs()->factory()->newInstanceById($a_job_id);
     }
