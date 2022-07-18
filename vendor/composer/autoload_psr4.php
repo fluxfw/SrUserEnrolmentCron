@@ -8,5 +8,4 @@ $baseDir = dirname($vendorDir);
 return array(
     'srag\\Plugins\\SrUserEnrolmentCron\\' => array($baseDir . '/src'),
     'srag\\LibrariesNamespaceChanger\\' => array($vendorDir . '/srag/librariesnamespacechanger/src'),
-    'srag\\GeneratePluginInfosHelper\\SrUserEnrolmentCron\\' => array($vendorDir . '/srag/generateplugininfoshelper/src'),
 );
