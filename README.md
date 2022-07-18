@@ -16,7 +16,7 @@ Start at your ILIAS root directory
 ```bash
 mkdir -p Customizing/global/plugins/Services/Cron/CronHook
 cd Customizing/global/plugins/Services/Cron/CronHook
-git clone https://github.com/fluxapps/SrUserEnrolmentCron.git SrUserEnrolmentCron
+git clone https://github.com/fluxfw/SrUserEnrolmentCron.git SrUserEnrolmentCron
 ```
 
 Update, activate and config the plugin in the ILIAS Plugin Administration
@@ -25,7 +25,7 @@ Update, activate and config the plugin in the ILIAS Plugin Administration
 
 ### Base plugin
 
-First you need to install the [SrUserEnrolment](https://github.com/fluxapps/SrUserEnrolment) plugin
+First you need to install the [SrUserEnrolment](https://github.com/fluxfw/SrUserEnrolment) plugin
 
 ### Cron jobs
 
